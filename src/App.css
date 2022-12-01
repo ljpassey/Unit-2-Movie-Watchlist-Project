@@ -2,20 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #000000;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,16 +12,85 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+html {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+  background: #25aae1;
+}
+
+button {
+  height: 44px;
+  font-size: 22px;
+  padding: 0px 12px;
+  color: #0f551c;
+  background-color: transparent;
+  border: 2px solid #0f551c;
+  border-radius: 3px;
+  min-width: 125px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.page {
+  width: calc(100vw - 520px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.watchlist {
+  width: 500px;
+  height: auto;
+  overflow-y: scroll;
+  position: relative;
+  top: 0px;
+  right: 0;
+  text-align: center;
+  background-color: #26512e;
 }
